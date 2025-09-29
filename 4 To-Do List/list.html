@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>To-Do List</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            background: linear-gradient(pink,red);
+            background-repeat: no-repeat;
+            height: 100vh;
+
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .remove-btn {
+            margin-left: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter new task" />
+    <button id="addTaskButton">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
